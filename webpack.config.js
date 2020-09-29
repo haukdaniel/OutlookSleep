@@ -5,7 +5,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 const urlDev="https://localhost:3000/";
-const urlProd="https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd="https://outlooksleep.azurewebsites.net/";
 
 module.exports = async (env, options) => {
     const dev = options.mode === "development";
