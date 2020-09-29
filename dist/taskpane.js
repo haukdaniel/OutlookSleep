@@ -19793,9 +19793,9 @@ function extend() {
 
 /***/ }),
 
-/***/ "./src/helpers/fallbackAuthHelper.ts":
+/***/ "./src/helpers/fallbackauthhelper.ts":
 /*!*******************************************!*\
-  !*** ./src/helpers/fallbackAuthHelper.ts ***!
+  !*** ./src/helpers/fallbackauthhelper.ts ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -20185,7 +20185,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.getGraphData = void 0;
 /* global OfficeRuntime */
 
-var fallbackAuthHelper_1 = __webpack_require__(/*! ./fallbackAuthHelper */ "./src/helpers/fallbackAuthHelper.ts");
+var fallbackauthhelper_1 = __webpack_require__(/*! ./fallbackauthhelper */ "./src/helpers/fallbackauthhelper.ts");
 
 var sso = __webpack_require__(/*! office-addin-sso */ "./node_modules/office-addin-sso/lib/main.js");
 
@@ -20262,7 +20262,7 @@ function getGraphData() {
 
           if (exception_1.code) {
             if (sso.handleClientSideErrors(exception_1)) {
-              fallbackAuthHelper_1.dialogFallback();
+              fallbackauthhelper_1.dialogFallback();
             }
           } else {
             sso.showMessage("EXCEPTION: " + JSON.stringify(exception_1));
@@ -20293,7 +20293,7 @@ function handleAADErrors(exchangeResponse) {
     retryGetAccessToken++;
     getGraphData();
   } else {
-    fallbackAuthHelper_1.dialogFallback();
+    fallbackauthhelper_1.dialogFallback();
   }
 }
 
