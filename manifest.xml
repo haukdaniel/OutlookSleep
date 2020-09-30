@@ -85,7 +85,7 @@
       </Resources>
       <WebApplicationInfo>
         <Id>db3456dc-2bfb-4ee9-bae7-cb66ada2564a</Id>
-        <Resource>api://localhost:3000/db3456dc-2bfb-4ee9-bae7-cb66ada2564a</Resource>
+        <Resource>api://outlooksleep.azurewebsites.net/db3456dc-2bfb-4ee9-bae7-cb66ada2564a</Resource>
         <Scopes>
           <Scope>User.Read</Scope>
           <Scope>profile</Scope>
